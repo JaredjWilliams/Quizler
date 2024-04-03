@@ -1,8 +1,12 @@
 import fs from 'fs'
 
-export const chooseRandom = () => {
-  // TODO implement chooseRandom
-}
+export const chooseRandom = (array, numItems) => 
+  array.length === 0 || numItems === 0 || array.length === 1 ? array :
+  array.slice()
+  .map(value => ({value, sort: Math.random()}))
+  .sort((a, b) => a.sort - b.sort)
+  .map(a => a.value)
+  .slice(0, numItems)
 
 export const createPrompt = () => {
   // TODO implement createPrompt
