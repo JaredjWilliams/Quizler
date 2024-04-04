@@ -34,7 +34,10 @@ const askForQuestions = [
 
 const createQuiz = title =>
   prompt(askForQuestions)
-    .then(answer => createPrompt(answer))
+    .then(answer => {
+      console.log(answer)
+      return createPrompt(answer)
+    })
     .then(promptArray => prompt(promptArray))
     .then(answer => createQuestions(answer))
     .then(quiz => writeFile(title, JSON.stringify(quiz)))
