@@ -1,0 +1,20 @@
+[
+  {
+    "type": "list",
+    "name": "question-1",
+    "message": "How old are you?",
+    "choices": ["25", "26", "27"],
+  },
+  {
+    "type": "list",
+    "name": "question-2",
+    "message": "What is your favorite color?",
+    "choices": ["Blue", "Green", "Red"],
+  },
+  {
+    "type": "list",
+    "name": "question-3",
+    "message": "How many dogs do you have?",
+    "choices": ["1", "2", "3"],
+  },
+]
